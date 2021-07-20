@@ -1,0 +1,103 @@
+.whole-container {
+	display: flex;
+}
+.top-main-container {
+	display: flex;
+	flex-direction: column;
+    color: #456990;
+    font: impact fantacy;
+    background-color: #EEB868;
+	padding-top: 0;
+}
+.main-nav {
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    margin: 1rem;
+    padding: 3rem;
+}
+ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+  }
+  
+  li a {
+	display: block;
+	padding: 8px 16px;
+	text-decoration: none;
+  }
+  
+  /* Change the link color on hover */
+  li a:hover {
+	background-color: #093a58;
+	color: white;
+  }
+
+.main-nav a {
+	font-size: .95em;
+	color: white;
+	text-transform: uppercase;
+}
+.wrapper,
+.main-footer {
+	text-align: center;
+}
+.wrapper {
+	color: #fff;
+	padding: 3.2em 0;
+	margin-bottom: 48px;
+}
+.wrapper {
+	overflow: hidden;
+  }
+  
+  .sliding-background {
+	background: url(../images/pink-splash.jpg) repeat-x;
+	height: 200px;
+	width: 5076px;
+	animation: slide 60s linear infinite;
+}
+  }
+body {
+    background-color: #49DCB1;
+}
+.description {
+    background-color: #EF767A;
+}
+.info {
+    background-color:#209b86 ;
+    color: white;
+}
+footer {
+    background-color: #456990;
+    color: white;
+}
+@keyframes slide {
+	0%{
+	  transform: translate3d(0, 0, 0);
+	}
+	100%{
+	  transform: translate3d(-1692px, 0, 0);
+	}
+  }
+/*  Media Queries  */
+
+@media (min-width: 769px) {
+	.main-header, .main-nav {
+		width: 90%;
+		margin: 0 auto;
+        display: flex;
+		flex-direction: row;
+	}
+}
+@media (min-width: 1025px) {
+	.main-header    {
+		width: 80%;
+		max-width: 1150px;
+	}
+}

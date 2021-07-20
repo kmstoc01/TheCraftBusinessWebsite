@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=CSS/form_style.css>
+    <title>CraftBusiness</title>
+</head>
+<form action="index.html" method="post">
+        
+    <h1>Send Us A Request!</h1>
+    
+    <fieldset>
+      
+      <legend><span class="number">1</span>Tell Us About Yourself</legend>
+      
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="user_name">
+      
+      <label for="mail">Email:</label>
+      <input type="email" id="mail" name="user_email">
+
+      <label>Age:</label>
+      <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Under 13</label><br>
+       <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">13 or Older</label>
+        
+    </fieldset>
+    
+    <fieldset>
+      
+      <legend><span class="number">2</span>What would you like us to create for you?</legend>
+    
+      <label for="describe">Description & Inspiration:</label>
+      <textarea id="describe" name="user_describe"></textarea>
+      
+      <label for="medium">Type of Art:</label>
+      <select id="medium" name="user_meduim">
+        <optgroup label="Web">
+          <option value="furniture">Furniture</option>
+          <option value="wall decor">Wall Decor</option>
+          <option value="other">Something Else</option>
+      </select>
+      
+      <label>How quickly will you needed this completed?:</label>
+      <input type="checkbox" id="ASAP" value="ASAP" name="user_ASAP"><label class="light" for="ASAP">ASAP (Shipped in 1 week)</label><br>
+      <input type="checkbox" id="quickly" value="quickly" name="user_quickly"><label class="light" for="quickly">Quickly (Shipped in 3-4 weeks)</label><br>
+      <input type="checkbox" id="no_rush" value="no_rush" name="user_no_rush"><label class="light" for="no_rush">No Rush (SHipped in 4-8 weeks)</label>
+     
+      
+    </fieldset>
+    
+    <button type="submit">Submit Request</button>
+    
+    
+  </form> 
+  </html>
