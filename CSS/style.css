@@ -1,12 +1,31 @@
 .whole-container {
 	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background-image: url(../images/pink-swirls.jpg);
+}
+.top {
+	display: flex;
+	padding-right: 4%;
+	padding-left: 2%;
+	max-height: 25%;
+}
+.top h1 {
+	margin-top: 25%;
+	font-size: 3em;
+	padding-left: 6%;
+}
+.top image {
+	max-height: .1em;
+	width: auto;
 }
 .top-main-container {
 	display: flex;
 	flex-direction: column;
-    color: #456990;
+    color: whitesmoke;
     font: impact fantacy;
-    background-color: #EEB868;
+	font-size: 1.25em;
+    background-color: #F72585;
 	padding-top: 0;
 }
 .main-nav {
@@ -15,7 +34,7 @@
     text-decoration: none;
     list-style: none;
     margin: 1rem;
-    padding: 3rem;
+    padding: 1rem;
 }
 ul {
 	list-style-type: none;
@@ -49,32 +68,58 @@ ul {
 }
 .wrapper {
 	color: #fff;
-	padding: 3.2em 0;
-	margin-bottom: 48px;
-}
-.wrapper {
+	margin-bottom: 5px;
 	overflow: hidden;
-  }
+}
   
   .sliding-background {
 	background: url(../images/pink-splash.jpg) repeat-x;
-	height: 200px;
-	width: 5076px;
+	background-repeat: repeat-x;
+	height: 50px;
+	width: 100%;
 	animation: slide 60s linear infinite;
 }
   }
 body {
-    background-color: #49DCB1;
+    background-color: #F72585;
+}
+.middle-main-container {
+	margin: 2%;
+	border-radius: 15px;
 }
 .description {
-    background-color: #EF767A;
+    background-color: #cf56a1;
+	color: #093a58;
+	text-align: center;
+	font-size: 1rem;
+	border-style: inset;
+	border-color: #F72585;
+	border-width: thick;
+	border-radius: 15px;
 }
 .info {
-    background-color:#209b86 ;
+    background-color: #F72585 ;
     color: white;
+	padding-bottom: 5%;
+}
+.feature_container {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	padding-bottom: 1em;
+	padding-left: 3%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 5%;
+	border-style: solid;
+	color: #093a58;
+}
+img {
+	max-width: 35%;
+    height: auto;
 }
 footer {
-    background-color: #456990;
+    background-color: #F72585;
     color: white;
 }
 @keyframes slide {
