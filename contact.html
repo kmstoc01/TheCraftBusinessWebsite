@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href=CSS/form_style.css>
-    <script src="script.js"></script>
+    <script defer src="js/script.js"></script>
     <title>CraftBusiness</title>
 </head>
 <form action="index.html" method="post">
@@ -34,7 +34,7 @@
       
       <label for="medium">Type of Art:</label>
       <select id="medium" name="user_meduim">
-        <optgroup label="Web">
+        <optgroup label="type">
           <option value="furniture">Furniture</option>
           <option value="wall decor">Wall Decor</option>
           <option value="other">Something Else</option>
@@ -43,13 +43,14 @@
       <label>How quickly will you needed this completed?:</label>
       <input type="checkbox" id="ASAP" value="ASAP" name="user_ASAP"><label class="light" for="ASAP">ASAP (Shipped in 1 week)</label><br>
       <input type="checkbox" id="quickly" value="quickly" name="user_quickly"><label class="light" for="quickly">Quickly (Shipped in 3-4 weeks)</label><br>
-      <input type="checkbox" id="no_rush" value="no_rush" name="user_no_rush"><label class="light" for="no_rush">No Rush (SHipped in 4-8 weeks)</label>
+      <input type="checkbox" id="no_rush" value="no_rush" name="user_no_rush"><label class="light" for="no_rush">No Rush (Shipped in 4-8 weeks)</label>
      
       
     </fieldset>
     
-    <button type="submit">Submit Request</button>
-    
+    <div class="alert">
+    <button id="submit" onclick="sayThanks()">Submit Request</button>
+  </div>
     
   </form> 
   </html>

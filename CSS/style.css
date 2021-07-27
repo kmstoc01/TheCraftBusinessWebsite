@@ -161,8 +161,14 @@ footer {
 	}
 }
 @media (min-width: 1025px) {
+	.main-header, .main-nav {
+		display: flex;
+		flex-direction: row;
+		padding-left: 3%;
+	}
 	.main-header    {
 		width: 80%;
 		max-width: 1150px;
+
 	}
 }
