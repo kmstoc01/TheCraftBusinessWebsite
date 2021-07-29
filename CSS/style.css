@@ -72,7 +72,7 @@ ul {
   }
 
 .main-nav a {
-	font-size: .95em;
+	font-size: .85em;
 	color: white;
 	text-transform: uppercase;
 }
@@ -147,10 +147,11 @@ footer {
   }
 /*  Media Queries  */
 
-@media (min-width: 769px) {
+/* Tablet view- horizontal nav bar & info box layout/order change*/
+@media (min-width: 605px) {
 	.main-header, .main-nav {
-		width: 90%;
-		margin: 0 auto;
+		width: 100%;
+		margin: 0 0;
         display: flex;
 		flex-direction: column;
 	}
@@ -160,15 +161,34 @@ footer {
 		flex-direction: row;
 	}
 }
-@media (min-width: 1025px) {
+/* Desktop view - nav bar inline with title & logo */
+@media (min-width: 750px) {
+	/*.whole-container {
+		max-width: 1000px;
+	}
+	*/
 	.main-header, .main-nav {
 		display: flex;
 		flex-direction: row;
 		padding-left: 3%;
 	}
-	.main-header    {
-		width: 80%;
-		max-width: 1150px;
-
+	.main-nav {
+		padding-top: 15%;
+		width: 90%;
 	}
+	.description {
+		display: flex;
+		flex-direction: row;
+		padding: 5%;
+	}
+	.description img {
+		max-width: 35%;
+		height: auto;
+		order: -1;
+	}
+	.info {
+		max-width: 750px;
+	}
+	}
+	
 }
