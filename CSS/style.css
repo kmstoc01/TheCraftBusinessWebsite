@@ -148,7 +148,7 @@ footer {
 /*  Media Queries  */
 
 /* Tablet view- horizontal nav bar & info box layout/order change*/
-@media (min-width: 605px) {
+@media (min-width: 700px) {
 	.main-header, .main-nav {
 		width: 100%;
 		margin: 0 0;
@@ -162,11 +162,7 @@ footer {
 	}
 }
 /* Desktop view - nav bar inline with title & logo */
-@media (min-width: 750px) {
-	/*.whole-container {
-		max-width: 1000px;
-	}
-	*/
+@media (min-width: 850px) {
 	.main-header, .main-nav {
 		display: flex;
 		flex-direction: row;
@@ -179,6 +175,7 @@ footer {
 	.description {
 		display: flex;
 		flex-direction: row;
+		flex-grow: inherit;
 		padding: 5%;
 	}
 	.description img {
@@ -186,9 +183,30 @@ footer {
 		height: auto;
 		order: -1;
 	}
-	.info {
-		max-width: 750px;
+	.description h2 {
+		font-size: 3em;
+		padding: 2%
 	}
+	.description p {
+		font-size: 2em;
+		padding-top: 2%;
 	}
-	
+	.feature_container {
+		flex-direction: row;
+		justify-content: space-evenly;
+		max-height: 480px;
+	}
+    img {
+		height: 55%;
+		width: auto;
+	}
+	.f_furnature {
+		padding-left: -5%;
+		flex-shrink: 10;
+	}
+	.f_wall_decor {
+		flex-grow: 8;
+		padding-right: 8%;
+	}
 }
+	
