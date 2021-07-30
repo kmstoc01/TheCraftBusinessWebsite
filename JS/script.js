@@ -7,10 +7,12 @@ function contactValidation() {
     const email = document.getElementById("email");
     const emailValidator = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value);
    
-    //validate name is required
-    //to do: add name requirement
-    const name = document.getElementById("name");
-
+   
+  var name = document.getElementById("name").value;
+   if (name.length == 0) {
+     alert("Please tell us your name");
+     return false;
+   }
     let isValid= false;
     if(emailValidator) {
         isValid= true;
@@ -27,12 +29,13 @@ function contactValidation() {
 }
 
 
-//this function is hidding the form upon sucessful validation and showing the confirmation message
+//this function is hidding the form upon sucessful validation and showing the confirmation messaage
 function confirmationMessage() {
     var x = document.getElementById("contact_form");
     //getting the hidden confirmation control
     const confirmationMessage = document.getElementById("confirmationMessage");
-    
+    const name = document.getElementById("name").value; //this is the value in the name input box    
+    const contactUsername = document.getElementById("contactUsername"); //is the placeholder element for the name in the contact field
     
     if (x.style.display === "none") {
         //this is showing the form
@@ -44,5 +47,7 @@ function confirmationMessage() {
       x.style.display = "none";
       //this shows the confirmation control
       confirmationMessage.style.display = "block";
+      //add name from contact for to placeholder
+      contactUsername.innerHTML += name;
     }
   }
